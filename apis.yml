@@ -1,8 +1,25 @@
 aid: baton
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/baton.png
 name: Baton
-description: Baton is a company surfaced as a portfolio company of 8vc, obvious-ventures and added to
-  the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: Baton is a supply-chain and logistics technology company that operates as Ryder System's
+  Silicon Valley innovation lab following its 2022 acquisition. Founded in 2019 out of 8VC's build
+  program, Baton originally built a network of freight "drop zones" that let long-haul truckers hand
+  off loads for local pickup and delivery, coordinating vehicles, drop zones, warehouses, and local
+  drivers. Today the team builds RyderShare, a collaborative logistics platform combining real-time
+  supply-chain visibility with exception management across shipments in transit. As of this enrichment
+  pass, baton.io publishes no public developer API, SDK, documentation, or integration surface (the
+  site exposes only marketing and careers pages); this profile is maintained for network discovery.
 url: https://raw.githubusercontent.com/api-evangelist/baton/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -13,9 +30,14 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Logistics
+- Supply Chain
+- Freight
+- Transportation
+- Visibility
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +45,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/baton-domain-security.yml
 - type: Website
   url: https://baton.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
